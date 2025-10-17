@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Date and Day</title>
+  </head>
+  <body>
+    <p id="output"></p>
+
+    <script>
+      const date = new Date(2021, 1, 6); // Month is 0-indexed, so 1 = February
+      const options = { weekday: "long" };
+      const day = date.toLocaleDateString("en-US", options);
+      document.getElementById("output").innerHTML =
+        "Date: 2/6/2021 Day: " + day;
+    </script>
+  </body>
+</html>
